@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.slide {
+  max-width: 100vw;
+  height: 100vh;
+  padding: 40px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#slide-1 {
+  background: #4074ac;
+}
+
+#slide-2 {
+  background: #d0ac7c;
+}
+
+#slide-3 {
+  background: #087474;
+}
+
+#slide-4 {
+  background: #6054c4;
+}
+
+.slide .title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#slide-1 .title {
+  transform: translateY(-300px);
+  animation: welcomeTitle 1s forwards;
+}
+
+.slide p {
+  margin-bottom: 40px;
+}
+
+#slide-1 p {
+  transform: translateX(-110%);
+  animation: welcomeContent 1s forwards;
+}
+
+.btn {
+  font-family: inherit;
+  border: none;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-light {
+  background: white;
+}
+
+.btn-light:hover {
+  background: #2c2c2c;
+  color: #fff;
+}
+
+.btn-dark {
+  background: #2c2c2c;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #fff;
+  color: #2c2c2c;
+}
+
+.arrows {
+  display: flex;
+  gap: 5px;
+}
+
+@keyframes welcomeTitle {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes welcomeContent {
+  to {
+    transform: translateX(0);
+  }
+}
